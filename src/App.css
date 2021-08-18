@@ -1,10 +1,17 @@
+html, 
+body {
+    height: 100%;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.main{  
+  background: rgb(255 255 255);
+  height: 100%
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,26 +20,197 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .table-content {
+  margin-bottom: 48px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+} */
+
+.table-content{
+  height: 288px;
+  overflow-y:auto
+}
+
+.App-content{
+  min-height: 560px;
+  width: 80%;
+  margin: auto;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+  height: 100px;
+}
+
+.logo img{
+  width: 60px;
+}
+p{
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(24, 33, 109);
+  font-size: 48px;
+  line-height: 1.18;
+  margin-bottom: 8px;
+}
+h3{
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(62, 62, 62,1);
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 40px;
+  margin-top: 34px;
+}
+h4{
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(24, 33, 109);
+  font-size: 1rem;
+  margin: 16px 0px 8px 0px;
+}
+.output-text{
+  margin: 8px 0px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(62, 62, 62);
+  font-size: 18px;
+}
+
+.logout-text{
+  font-size: 1.2rem;
+  color: rgb(24, 33, 109);
+  cursor: pointer;
+}
+
+.row{
+  display: flex;
+  width: 100%;
+}
+.col{
+  flex:1
+}
+.breadcrumb{
+  margin-top: 16px;
+  font-size: 15px;
+  color: #838383;
+}
+
+.items{
+  text-align: center;
+  text-decoration: none;
+  background: rgb(46, 24, 106);
+  color: rgb(255, 255, 255);
+  font-size: 2.4rem;
+  font-weight: 700;
+  width: 100%;
+  border: 1px solid rgb(237, 243, 245);
+  border-radius: 4px;
+  padding: 95px 0px;
+  cursor: pointer;
+  margin-top: 0.625rem;
+  max-width: 180px;
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: rgb(23 31 114 / 20%) 0px 16px 30px;
+  margin-right: 16px;
+}
+
+.add-btn-container{
+  display:flex;
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.items:hover{
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 130, 92);
+  background-color: rgb(255, 130, 92);
+}
+
+
+.MuiFormControl-root {
+  margin: 10px auto !important;
+}
+
+input, textarea{
+  border-radius: 4px;
+  border: 0px;
+  background: rgb(241, 242, 243);
+  transition: all 0.3s ease-in-out 0s;
+  outline: none;
+  width: 100%;
+  padding: 1rem 1.25rem;
+}
+
+.MuiTextField-root{
+  width: 100%;
+}
+
+
+.header-col{
+  border-bottom: 1px solid rgb(205, 209, 212);
+}
+
+.grid-container{    
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+  grid-gap: 10px;
+  /* grid-auto-rows: 150px; */
+  overflow: scroll !important;
+  margin: 0 auto;
+}
+
+.col{
+  flex: 50%;
+}
+
+.grid-item{
+  padding: 10px;
+}
+
+.grid-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 50% 50%;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: rgb(23 31 114 / 20%) 0px 16px 30px;
+}
+
+.modalImage{
+  width: 20%;
+}
+
+.footer-inner{
+  position: relative;
+  width: 80%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 60px;
+  padding-top: 30px;
+}
+
+.footer{
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 130px;
+  background: rgb(241, 242, 243);  
+  color: white;
 }
