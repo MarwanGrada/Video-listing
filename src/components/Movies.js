@@ -10,7 +10,6 @@ const Movies = ({ data, clickedInfo }) => {
     <div className='App-content'>
       <p className='breadcrumb'><Link to='/'>Home</Link> <span >> Movies</span></p>
       <h2>Popular Movies</h2>
-
       <div className='grid-container'>
         {
           localData &&
